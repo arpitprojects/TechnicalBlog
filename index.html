@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Twitter Tweets.
+        </title>
+        <!-- All meta Tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Tweeter Tweets"/>
+        <meta property="og:site_name" content="Tweeter tweet extracter"/>
+        <meta property="og:url" content="http://" />
+        <meta property="og:description" content="Get all the tweets that is retweeted and has #custserv"/>
+        <meta property="og:type" content="website" />
+        <meta property="article:author" content="https://www.facebook.com/mjarpitanand" />
+        <meta property="og:image" content="http://" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
+        <!--End of all the Meta tags-->
+        <link rel="shortcut icon" href="https://twitter.com/favicon.ico" type="image/x-icon">
+        <!--All icons-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <!--End of the all icons-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+        <!-- All css-->
+        <link rel="stylesheet" href="vendors/css/bootstrap.css"/>
+        <link rel="stylesheet" href="resources/css/init.css"/>
+        <link rel="stylesheet" href="resources/css/main.css"/>
+
+        <!--End of All css-->
+
+        <!-- All Js-->
+        <script src="vendors/js/jquery.min.js"></script>
+        <script src="vendors/js/bootstrap.js"></script>
+        <script src="resources/js/script.js"></script>
+        <script src="resources/js/init.js"></script>
+        <!--End of All Js-->
+    </head>    
+    <body id="body">
+        <!--End of the preloader html-->
+        <!--Header of the website-->
+        <header>
+            <div class="row">
+                <div class="col">
+                    <div class="bar" id="menu" onclick="toggle()">
+                        <i class="fa fa-bars"></i>
+                    </div>
+
+                    <div class="right">
+                        <p class="tag">Technical Blog Writing</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End Of Header of the website-->
+        <br /><br/>
+        <!--Break tags-->
+
+        <!--Whole Wrapper-->
+        <div id="wrapper">
+            <!--Side Nav-->
+            <div id="sidebar-wrapper">
+                <br /><br /><br /><br />
+                <div class="close" onclick="toggle_close()"><i class="fa fa-close fa-lg"></i></div>
+                <ul class="sidebar-nav">
+                    <li>
+                        <p><a href="index.html">Javascript Testing</a></p>
+                    </li>   
+                    <li>
+                        <p><a href="http://arpitanand.tk">More Content</a></p>
+                    </li>   
+
+                    <br/>
+
+                </ul>
+            </div>
+        </div>
+        <!--End of sidenav HTML-->
+        <!--Post Appended here-->
+
+        <div id="page-content-wrapper">
+            <br /><br />
+            <div class="head">
+                <br />
+                <div class="breadcrumbs">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Technical Blog</a></li>
+                        <li class="active">Javascript Testing</li>
+                    </ol>
+                </div>
+                <center>
+                    <p class="head-tag">Javascript Testing</p>
+                </center>
+            </div>
+            <br /><br />
+            <div class="section">
+                <div class="subtopic">
+                    Introduction
+                </div>
+                <br /><br />
+
+                <p class="subtopic-det">
+                    Working in the production environment, there is no scope of the error ,Error and non-tested modules can 
+                    destroy the features of the application and affect the performance.
+                    <br/>
+                    Obviously, We don't want our product to break.
+                </p>
+                <br/>   
+                <blockquote id="blockquote"> 
+                    In simple way, we test our application by Refresh,click, PlayAround to test our application and test until the
+                    product is working.
+                </blockquote>
+            </div>
+            <br/>
+            <p class="subtopic-det">
+                But this process is slow and inaccurate, and need a standard method so that a method is followed.
+                <br /><br />
+            <ul class="subtopic-list">
+                <li><p>We write unit tests, suits of function and check functionality.</p></li>
+                <li><p>We need to make Test-driven Development.</p></li>
+                <li><p>Write the test first,and then write features itself.</p></li>
+            </ul>
+            <br /><br />
+            <p class="subtopic">What is Test?</p>
+            <br />
+            <p class="subtopic-det">We can define <span class="bold">Test</span> as validating the software according to the expectation.In other words,</p>
+            <br />
+            <div class="media">
+                <div class="media-left media-middle">
+                    <a href="#">
+                        <img class="media-object" src="resources/img/aero.jpg" alt="Aeroplane Image">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Fun Fact:</h4>
+                    <br/><br />
+                    <p class="subtopic-det">Boeing 747, has more than 170 miles of wires and has complex system, functionality.
+                        Navigating, pressure, Air quality everything is tested. So, A number of test is performed.
+                        <br />
+                        Test on the wings done till it breaks the wings
+                        <br />
+                        <br/>
+                    <p class="subtopic-det well">Faliure is the only option for the testing here.</p> 
+
+                </div>
+            </div>
+            <br /><br />
+            <p class="subtopic-det" id="blockquote">
+                In our school days, we used to appear on various exams, Second apporach is that Teacher is testing how they have
+                teaching the students.
+                <br /><br />
+                In analog, we can say that faliure app, finding bug, till the software is running in correct way. 
+            </p>
+            <br /><br />
+            <div class="subtopic">
+                Example:
+            </div>
+            <br />
+            <p class="cmd">
+
+                function add(x,y)
+                <br />
+                {
+                <br />
+                &nbsp; &nbsp;&nbsp;&nbsp;return x + y;
+                <br />
+                }
+                <br /><br />
+                add(2 , 3); // Let say we want Int Add and excepting 5.
+            </p>
+            <br />
+            <p class="well subtopic-det">
+                Test Case 1: Is the calling function is there or not.
+                <br/><br />
+                Test Case 2: Is the passing argument is '2' , '3' string then output is 23.
+                <br /><br />
+                Test Case 3: If floating number is passes as 0.1  , 0.2 is 0.300004.
+            </p>
+            <br /><br />
+            <p class="subtopic alert alert">
+                Refactor the add function,<span class="bold">Using Red Green Refactor Cycle.</span>
+            </p>
+
+            <div class="media">
+                <div class="media-left media-middle">
+                    <a href="#">
+                        <img class="media-object" src="resources/img/rec.png" alt="Aeroplane Image">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <br/><br />
+                    <h4 class="media-heading">Expectations:</h4>
+                    <br/>
+                    <p class="subtopic-det">
+                    <p style="color:green;"><i class="fa fa-check-square-o"></i> 2 + 3 = 5. </p>
+                    <br />
+                    <p style="color:red;"><i class="fa fa-window-close"></i> String pass then Error. </p>
+                    <br />
+                    <p style="color:red;"><i class="fa fa-window-close"></i> 0.1 + 0.2 = 0.3 </p>
+                    <br />
+
+
+                </div>
+            </div>
+            <br />
+            <p class="subtopic-det">Below the refactored codes:</p> 
+            <br />
+            <div class="cmd">
+                function add(x , y ){ 
+                <br /><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;if(typeof(x) && typeof(y) !== 'number'){
+                <br /><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    throw new Error('Invalid Integer Number');
+                <br /><br />
+                &nbsp;&nbsp;&nbsp;&nbsp; } 
+                <br /><br />
+                &nbsp;&nbsp;&nbsp;&nbsp; result = x + y;
+                <br /><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;if(parseInt(result) !== result){
+                <br /><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result = parseFloat(result).toFixed(1);
+                <br /><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;}
+                <br /><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;return result;
+                <br/><br />
+
+                }
+            </div>
+            <br />
+            <p class="subtopic-det">Conclusion:</p>
+            <br />
+            <p id="blockquote">We can write expect(add(0.1 , 0.2).toBe(0.3))</p>
+            <br />
+            <br />
+            <p class="subtopic">Intoduction to Jasmine</p>
+            <br />
+            <p class="subtopic-det">Jasmine is a unit-testing framework, run on any javascript-enabled platform, testing javascript codes.  
+                <br /><br />
+                <i class="fa fa-check-square-o"></i>&nbsp; &nbsp;It is run by checking specRunner.html file in the browser which include specs, both the specs and suits are linked.
+                <br /><br />
+                <i class="fa fa-check-square-o"></i>&nbsp; &nbsp;Suites:It starts with the global jasmine function with the parameter-a string and function.
+                <br /><br />
+                <i class="fa fa-check-square-o"></i>&nbsp; &nbsp;Specs:Specs defined by call of the global Jasmine function (it()), which,like describe takes string and  function.
+                <br /><br />
+                <i class="fa fa-check-square-o"></i>&nbsp; &nbsp;Expectations:built with the function expect which takes the value called actual.responsible for reporting of the Jasmine.
+                <br /><br />
+                <i class="fa fa-check-square-o"></i>&nbsp; &nbsp;Matchers:Matchers implements the bool comparison between actual values and expecting values.
+            </p>
+            <br /><br /><br />
+            <p class="subtopic">Implementing Jasmine.</p>
+            <br />
+            <div class="cmd">
+                <ul>
+                    <li><i class="fa fa-folder fa fa-lg"></i>  Specs</li>
+                    <br />
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-file"></i>  AddressBookSpec.js</li>
+                    <br />
+                    <li><i class="fa fa-folder fa-lg"></i>  Src</li>
+                    <br />
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-file"></i>  AddressBook.js</li>
+                    <br />
+                    <li><i class="fa fa-file fa-lg"></i>  SpecRunner.html</li>
+                </ul>
+            </div>
+            <p id="blockquote">We should be running SpecRunner.html, and follow Red, Green, Refactor Cycle.</p>
+            <br /><br /><br />
+            <p class="well">AddressBookSpec.js</p>
+            <div class="cmd">
+                describe('AddressBook' , function(){
+                <br/><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;it('should be able to add the contact' , function(){
+                <br /><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var addressBook = new AddressBook();
+                <br/><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.contact = new Contact();
+                <br /><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;addressBook.addContact(this.contact);
+                <br /><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(addressBook.getContact(0).toBe(this.contact));
+                <br/><br >
+
+                &nbsp;&nbsp;&nbsp;&nbsp;});
+                <br/>
+                });
+            </div>
+            <p class="well">AddressBook.js</p>
+            <div class="cmd">
+                function AddressBook(){
+                <br/><br />
+                &nbsp;&nbsp;&nbsp;&nbsp; this.contact = [];
+                <br /><br/>
+                }
+                <br /><br />
+                AddressBook.prototype.addContact = function(con){
+                <br /><br />
+                &nbsp;&nbsp;&nbsp;&nbsp; this.contact.push(contact);
+                <br /><br />
+                }
+                <br /><br />
+                AddressBook.prototype.getContact = function(index){
+                <br /><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;   return this.contact[index];
+                <br /><br />
+                }
+                <br /><br />
+                function Contact(){
+                <br/><br />
+                }
+
+            </div>
+            <br /><br />
+            <p class="alert alert-danger">
+                Getting Red In specsRunner.html, review the js once again.
+            </p>
+            <br >
+            <p class="alert alert-success">
+                Getting Green In specsRunner.html, App running successfully.
+            </p>
+            <hr/>
+            <p class="subtopic">
+                Conclusion
+            </p>
+            <br />
+            <p class="subtopic-det">
+                Testing of your app, plays a vital role in the prodution environment, We can't afford,
+                to have error on our application.Moreover, Writing a testing module using a Jasmine,Mocha,
+                Chai for writing test modules.
+                <br/>
+                Test the faliure, finding bug, then test software till it  is running in correct way. 
+            </p>
+            <hr/><br />
+            <div class="media">
+                <div class="media-left media-middle">
+                    <a href="#">
+                        <img class="media-object" style="height:120px !important;width:120px !important;" src="http://placehold.it/200x200" alt="Arpit Anand">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <br />
+                    <h4 class="media-heading" id="bold">Author:</h4>
+                        
+                    <p class="subtopic-det">Arpit Anand.
+                        
+                    <p class="subtopic-det"><a href="http://arpitanand.tk"> Click to know about me</a></p> 
+
+                </div>
+            </div>
+            <hr/>
+            <br /><br />
+        </div><!--Main Wrapper Div -->
+        <br/><br />
+
+    </body>
+</html>
