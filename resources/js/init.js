@@ -7,7 +7,7 @@ function toggle(){
 
 /*Close of nav script*/
 
-function toggle_close(){
+function toggle_close1(){
     console.log('Close');
     document.getElementById('sidebar-wrapper').style.width = '0px';
 }
